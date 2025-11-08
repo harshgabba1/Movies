@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/movieSearchFragment">
+
+
+    <fragment
+        android:id="@+id/movieSearchFragment"
+        android:name="com.example.atlysmovies.MovieSearchFragment"
+        android:label="Movies">
+        <action
+            android:id="@+id/action_movieSearchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.atlysmovies.MovieDetailFragment"
+        android:label="Movie Details">
+        <argument android:name="movieName" app:argType="string" />
+        <argument android:name="movieDesc" app:argType="string" />
+        <argument android:name="movieImage" app:argType="string" />
+    </fragment>
+</navigation>
