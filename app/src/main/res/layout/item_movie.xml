@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
-    app:strokeWidth="1dp"
+    android:layout_margin="@dimen/dp_6"
+    app:cardCornerRadius="@dimen/dp_12"
+    app:cardElevation="@dimen/dp_4"
+    app:strokeWidth="@dimen/dp_1"
     app:strokeColor="@color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="6dp">
+        android:padding="@dimen/dp_6">
 
         <ImageView
             android:id="@+id/movieImage"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="@dimen/movie_image_height"
             android:scaleType="centerCrop"
             tools:src="@drawable/ic_launcher_background" />
 
@@ -27,11 +27,11 @@
             android:id="@+id/movieName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_medium"
             android:textStyle="bold"
             android:gravity="center"
-            android:paddingTop="6dp"
-            android:paddingBottom="4dp"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_4"
             tools:text="Inception" />
     </LinearLayout>
 

@@ -1,9 +1,11 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.atlysmovies.data.Movie
+import com.example.atlysmovies.domain.MovieRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

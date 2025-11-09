@@ -1,5 +1,6 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.data
 
+import com.example.atlysmovies.domain.MovieRepository
 import javax.inject.Inject
 
 class MovieRepositoryImpl @Inject constructor(

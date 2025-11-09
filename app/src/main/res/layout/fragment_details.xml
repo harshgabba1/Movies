@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="@dimen/padding_large">
 
         <ImageButton
             android:id="@+id/backButton"
@@ -21,8 +21,8 @@
         <ImageView
             android:id="@+id/movieImage"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="@dimen/dp_12"
             android:scaleType="centerCrop"
             tools:src="@drawable/ic_launcher_background" />
 
@@ -30,17 +30,17 @@
             android:id="@+id/movieTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/sp_20"
             android:textStyle="bold"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="@dimen/dp_12"
             tools:text="Inception" />
 
         <TextView
             android:id="@+id/movieDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:textSize="@dimen/sp_16"
             tools:text="A skilled thief is offered a chance to erase his past crimes if he can implant an idea into someone’s subconscious." />
     </LinearLayout>
 </ScrollView>

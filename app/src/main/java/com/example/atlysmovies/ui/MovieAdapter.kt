@@ -1,9 +1,10 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.atlysmovies.data.Movie
 import com.example.tmdbapp.databinding.ItemMovieBinding
 
 class MovieAdapter(

@@ -13,7 +13,7 @@
         android:supportsRtl="true">
 
         <activity
-            android:name="com.example.atlysmovies.MainActivity"
+            android:name="com.example.atlysmovies.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

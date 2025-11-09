@@ -1,4 +1,4 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.data
 
 data class Movie(
     val id: Int,

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp">
+    android:padding="@dimen/padding_medium">
 
     <EditText
         android:id="@+id/searchBox"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:hint="Search movies..."
         android:drawableStart="@android:drawable/ic_menu_search"
-        android:padding="10dp"
+        android:padding="@dimen/dp_10"
         android:backgroundTint="@color/black"
         android:imeOptions="actionSearch" />
 
@@ -22,7 +22,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="8dp"
+        android:paddingTop="@dimen/padding_medium"
         android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         tools:listitem="@layout/item_movie" />

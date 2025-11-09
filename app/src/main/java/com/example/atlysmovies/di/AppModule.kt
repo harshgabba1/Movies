@@ -1,5 +1,8 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.di
 
+import com.example.atlysmovies.domain.MovieRepository
+import com.example.atlysmovies.data.MovieRepositoryImpl
+import com.example.atlysmovies.data.TmdbApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

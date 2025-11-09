@@ -1,4 +1,4 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.tmdbapp.databinding.FragmentDetailsBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,9 +27,10 @@ class MovieDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val args = MovieDetailFragmentArgs.fromBundle(requireArguments())
-
-        binding.movieTitle.text = args.movieName
-        binding.movieDescription.text = args.movieDesc
+        with(binding) {
+            movieTitle.text = args.movieName
+            movieDescription.text = args.movieDesc
+        }
         Glide.with(binding.movieImage.context)
             .load("https://image.tmdb.org/t/p/w500${args.movieImage}")
             .into(binding.movieImage)

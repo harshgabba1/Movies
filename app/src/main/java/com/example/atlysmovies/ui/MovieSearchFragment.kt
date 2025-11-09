@@ -1,4 +1,4 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -34,13 +34,16 @@ class MovieSearchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         adapter = MovieAdapter { movie ->
-            val action = MovieSearchFragmentDirections.actionMovieSearchFragmentToMovieDetailFragment(
-                movie.title, movie.overview, movie.poster_path ?: ""
-            )
+            val action =
+                MovieSearchFragmentDirections.actionMovieSearchFragmentToMovieDetailFragment(
+                    movie.title, movie.overview, movie.poster_path ?: ""
+                )
             findNavController().navigate(action)
         }
-        binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        binding.recyclerView.adapter = adapter
+        with(binding) {
+            recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+            recyclerView.adapter = adapter
+        }
 
 
         vm.movies.observe(viewLifecycleOwner) { adapter.submitList(it) }

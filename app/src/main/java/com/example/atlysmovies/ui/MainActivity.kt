@@ -1,4 +1,4 @@
-package com.example.atlysmovies
+package com.example.atlysmovies.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
